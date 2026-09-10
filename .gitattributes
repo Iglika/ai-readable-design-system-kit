@@ -1,0 +1,5 @@
+# Figma documents are proprietary binary archives. No diff, no line-ending
+# conversion, no merge — a conflict here can only be resolved by re-exporting
+# from Figma.
+*.fig binary
+*.pdf binary

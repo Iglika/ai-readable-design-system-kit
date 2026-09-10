@@ -1,0 +1,24 @@
+{
+  "name": "AI-Readable Design System Starter Kit",
+  "version": "1.2.0",
+  "commercialRole": "free-public-beta",
+  "delivery": "downloadable-figma-file-plus-build-it-yourself-repository",
+  "includesFinishedFigmaFile": true,
+  "figmaTemplateFile": "figma/starter-template.fig",
+  "figmaAccess": "download-and-import-the-fig",
+  "figmaPaths": [
+    "use-the-finished-file",
+    "create-your-own-file"
+  ],
+  "sourceOfTruth": "tokens/src/values.mjs",
+  "repositoryStatus": "local-git-repository",
+  "releaseStatus": "beta-ready",
+  "expectedOutput": {
+    "figmaVariables": 311,
+    "textStyles": 41,
+    "effectStyles": 5,
+    "componentFamilies": 9,
+    "componentVariants": 134,
+    "exportedTokens": 357
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "AI-Readable Design System Starter",
+  "version": "1.2.0",
+  "description": "A brand-neutral starter for building a token-based design system in Figma with an LLM, then carrying it into code. Replace the placeholder values; keep the structure.",
+  "figma": {
+    "note": "The finished file ships as figma/starter-template.fig; import it into Figma. Two supported paths after that: rebrand the imported file (~22 primitive values; all semantics and variants follow), or create a new empty Figma file and rebuild the same audited contract from this kit.",
+    "collections": {
+      "Primitives": { "mode": "Value", "hiddenFromPublishing": true, "variables": 157 },
+      "Semantics": { "mode": "Light", "hiddenFromPublishing": false, "variables": 154 }
+    },
+    "variables": 311,
+    "textStyles": 41,
+    "effectStyles": 5,
+    "componentFamilies": 9,
+    "componentVariants": 134
+  },
+  "package": {
+    "format": "DTCG",
+    "tokens": 357,
+    "input": "src/values.mjs",
+    "source": "dist/tokens.json",
+    "css": "dist/tokens.css",
+    "cssProperties": 537,
+    "contracts": ["../contracts/naming.md", "../contracts/components.md"],
+    "instructions": ["../handoff/CLAUDE.md", "../handoff/SKILL.md"],
+    "build": "npm run build",
+    "validation": "npm run verify"
+  }
+}

@@ -1,0 +1,868 @@
+/* Design tokens — GENERATED, DO NOT EDIT.
+   Source of truth: your Figma file.
+   Regenerate with `npm run build`. */
+
+:root {
+
+  /* color */
+  --color-base-white: #FFFFFF;
+  --color-base-black: #000000;
+  --color-gray-50: #F8FAFC;
+  --color-gray-100: #F1F5F9;
+  --color-gray-200: #E2E8F0;
+  --color-gray-300: #CBD5E1;
+  --color-gray-400: #94A3B8;
+  --color-gray-500: #64748B;
+  --color-gray-600: #475569;
+  --color-gray-700: #334155;
+  --color-gray-800: #1E293B;
+  --color-gray-900: #0F172A;
+  --color-gray-950: #020617;
+  --color-indigo-50: #EEF2FF;
+  --color-indigo-100: #E0E7FF;
+  --color-indigo-200: #C7D2FE;
+  --color-indigo-300: #A5B4FC;
+  --color-indigo-400: #818CF8;
+  --color-indigo-500: #6366F1;
+  --color-indigo-600: #4F46E5;
+  --color-indigo-700: #4338CA;
+  --color-indigo-800: #3730A3;
+  --color-indigo-900: #312E81;
+  --color-indigo-950: #1E1B4B;
+  --color-teal-50: #F0FDFA;
+  --color-teal-100: #CCFBF1;
+  --color-teal-200: #99F6E4;
+  --color-teal-300: #5EEAD4;
+  --color-teal-400: #2DD4BF;
+  --color-teal-500: #14B8A6;
+  --color-teal-600: #0D9488;
+  --color-teal-700: #0F766E;
+  --color-teal-800: #115E59;
+  --color-teal-900: #134E4A;
+  --color-teal-950: #042F2E;
+  --color-red-50: #FEF2F2;
+  --color-red-100: #FEE2E2;
+  --color-red-200: #FECACA;
+  --color-red-300: #FCA5A5;
+  --color-red-400: #F87171;
+  --color-red-500: #EF4444;
+  --color-red-600: #DC2626;
+  --color-red-700: #B91C1C;
+  --color-red-800: #991B1B;
+  --color-red-900: #7F1D1D;
+  --color-red-950: #450A0A;
+  --color-emerald-50: #ECFDF5;
+  --color-emerald-100: #D1FAE5;
+  --color-emerald-200: #A7F3D0;
+  --color-emerald-300: #6EE7B7;
+  --color-emerald-400: #34D399;
+  --color-emerald-500: #10B981;
+  --color-emerald-600: #059669;
+  --color-emerald-700: #047857;
+  --color-emerald-800: #065F46;
+  --color-emerald-900: #064E3B;
+  --color-emerald-950: #022C22;
+  --color-amber-50: #FFFBEB;
+  --color-amber-100: #FEF3C7;
+  --color-amber-200: #FDE68A;
+  --color-amber-300: #FCD34D;
+  --color-amber-400: #FBBF24;
+  --color-amber-500: #F59E0B;
+  --color-amber-600: #D97706;
+  --color-amber-700: #B45309;
+  --color-amber-800: #92400E;
+  --color-amber-900: #78350F;
+  --color-amber-950: #451A03;
+  --color-shadow-black-4: rgba(2,6,23,0.04);
+  --color-shadow-black-6: rgba(2,6,23,0.06);
+  --color-shadow-black-8: rgba(2,6,23,0.08);
+  --color-shadow-black-10: rgba(2,6,23,0.10);
+  --color-shadow-black-14: rgba(2,6,23,0.14);
+  --color-shadow-black-18: rgba(2,6,23,0.18);
+  --color-shadow-black-25: rgba(2,6,23,0.25);
+
+  /* dimension */
+  --dimension-0: 0px;
+  --dimension-1: 4px;
+  --dimension-2: 8px;
+  --dimension-3: 12px;
+  --dimension-4: 16px;
+  --dimension-5: 20px;
+  --dimension-6: 24px;
+  --dimension-7: 28px;
+  --dimension-8: 32px;
+  --dimension-9: 36px;
+  --dimension-10: 40px;
+  --dimension-11: 44px;
+  --dimension-12: 48px;
+  --dimension-13: 52px;
+  --dimension-14: 56px;
+  --dimension-15: 60px;
+  --dimension-16: 64px;
+  --dimension-18: 72px;
+  --dimension-20: 80px;
+  --dimension-22: 88px;
+  --dimension-24: 96px;
+  --dimension-999: 999px;
+  --dimension-0-25: 1px;
+  --dimension-0-5: 2px;
+  --dimension-1-5: 6px;
+  --dimension-2-5: 10px;
+  --dimension-3-5: 14px;
+  --dimension-4-5: 18px;
+  --dimension-5-5: 22px;
+
+  /* font */
+  --font-family-heading: Outfit;
+  --font-family-body: Inter;
+  --font-family-mono: IBM Plex Mono;
+  --font-style-heading-regular: Regular;
+  --font-style-heading-medium: Medium;
+  --font-style-heading-semibold: SemiBold;
+  --font-style-heading-bold: Bold;
+  --font-style-body-regular: Regular;
+  --font-style-body-medium: Medium;
+  --font-style-body-semibold: Semi Bold;
+  --font-style-body-bold: Bold;
+  --font-style-mono-regular: Regular;
+  --font-style-mono-medium: Medium;
+  --font-style-mono-semibold: SemiBold;
+  --font-style-mono-bold: Bold;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+  --font-size-24: 24px;
+  --font-size-28: 28px;
+  --font-size-32: 32px;
+  --font-size-36: 36px;
+  --font-size-40: 40px;
+  --font-size-48: 48px;
+  --font-size-52: 52px;
+  --font-size-56: 56px;
+  --font-size-64: 64px;
+  --font-lineheight-110: 1.1;
+  --font-lineheight-120: 1.2;
+  --font-lineheight-130: 1.3;
+  --font-lineheight-140: 1.4;
+  --font-lineheight-150: 1.5;
+  --font-lineheight-160: 1.6;
+  --font-letterspacing-normal: 0em;
+  --font-letterspacing-tight: -0.02em;
+  --font-letterspacing-tighter: -0.04em;
+  --font-paragraphspacing-0: 0px;
+  --font-paragraphspacing-20: 20px;
+  --font-paragraphspacing-40: 40px;
+
+  /* motion */
+  --motion-duration-0: 0ms;
+  --motion-duration-160: 160ms;
+  --motion-duration-220: 220ms;
+  --motion-duration-320: 320ms;
+  --motion-duration-400: 400ms;
+  --motion-easing-standard: cubic-bezier(0.23, 1, 0.32, 1);
+  --motion-easing-gentle: cubic-bezier(0.44, 0, 0.56, 1);
+  --motion-easing-linear: linear;
+
+  /* semantic color */
+  --semantic-color-background-brand-bold-default: var(--color-indigo-600);
+  --semantic-color-background-brand-bold-hovered: var(--color-indigo-700);
+  --semantic-color-background-brand-bold-pressed: var(--color-indigo-800);
+  --semantic-color-background-brand-bold-disabled: var(--color-indigo-200);
+  --semantic-color-background-brand-subtle-default: var(--color-indigo-100);
+  --semantic-color-background-brand-subtle-hovered: var(--color-indigo-200);
+  --semantic-color-background-brand-subtle-pressed: var(--color-indigo-300);
+  --semantic-color-background-brand-subtle-disabled: var(--color-indigo-50);
+  --semantic-color-background-brand-subtlest-default: var(--color-indigo-50);
+  --semantic-color-background-brand-subtlest-hovered: var(--color-indigo-100);
+  --semantic-color-background-accent-bold-default: var(--color-teal-600);
+  --semantic-color-background-accent-bold-hovered: var(--color-teal-700);
+  --semantic-color-background-accent-bold-pressed: var(--color-teal-800);
+  --semantic-color-background-accent-subtle-default: var(--color-teal-100);
+  --semantic-color-background-accent-subtlest-default: var(--color-teal-50);
+  --semantic-color-background-neutral-bold-default: var(--color-gray-300);
+  --semantic-color-background-neutral-bold-hovered: var(--color-gray-400);
+  --semantic-color-background-neutral-subtle-default: var(--color-gray-100);
+  --semantic-color-background-neutral-subtle-hovered: var(--color-gray-200);
+  --semantic-color-background-neutral-subtle-pressed: var(--color-gray-300);
+  --semantic-color-background-neutral-subtle-disabled: var(--color-gray-200);
+  --semantic-color-background-neutral-subtlest-default: var(--color-gray-50);
+  --semantic-color-background-neutral-subtlest-hovered: var(--color-gray-100);
+  --semantic-color-background-neutral-subtlest-pressed: var(--color-gray-200);
+  --semantic-color-background-neutral-subtlest-disabled: var(--color-gray-50);
+  --semantic-color-background-neutral-subtlest-focused: var(--color-base-white);
+  --semantic-color-background-inverse-bold-default: var(--color-gray-900);
+  --semantic-color-background-inverse-bold-hovered: var(--color-gray-800);
+  --semantic-color-background-inverse-bold-pressed: var(--color-gray-950);
+  --semantic-color-background-inverse-subtle-default: var(--color-gray-800);
+  --semantic-color-background-danger-bold-default: var(--color-red-600);
+  --semantic-color-background-danger-bold-hovered: var(--color-red-700);
+  --semantic-color-background-danger-bold-pressed: var(--color-red-800);
+  --semantic-color-background-danger-bold-disabled: var(--color-red-200);
+  --semantic-color-background-danger-subtle-default: var(--color-red-100);
+  --semantic-color-background-danger-subtle-hovered: var(--color-red-200);
+  --semantic-color-background-danger-subtlest-default: var(--color-red-50);
+  --semantic-color-background-success-bold-default: var(--color-emerald-600);
+  --semantic-color-background-success-bold-hovered: var(--color-emerald-700);
+  --semantic-color-background-success-bold-pressed: var(--color-emerald-800);
+  --semantic-color-background-success-bold-disabled: var(--color-emerald-200);
+  --semantic-color-background-success-subtle-default: var(--color-emerald-100);
+  --semantic-color-background-success-subtle-hovered: var(--color-emerald-200);
+  --semantic-color-background-success-subtlest-default: var(--color-emerald-50);
+  --semantic-color-background-warning-bold-default: var(--color-amber-500);
+  --semantic-color-background-warning-bold-hovered: var(--color-amber-600);
+  --semantic-color-background-warning-subtle-default: var(--color-amber-100);
+  --semantic-color-background-warning-subtlest-default: var(--color-amber-50);
+  --semantic-color-background-surface-default-default: var(--color-base-white);
+  --semantic-color-background-surface-raised-default: var(--color-base-white);
+  --semantic-color-background-surface-sunken-default: var(--color-gray-50);
+  --semantic-color-text-neutral-bold-default: var(--color-gray-900);
+  --semantic-color-text-neutral-bold-hovered: var(--color-gray-950);
+  --semantic-color-text-neutral-bold-disabled: var(--color-gray-500);
+  --semantic-color-text-neutral-subtle-default: var(--color-gray-700);
+  --semantic-color-text-neutral-subtle-hovered: var(--color-gray-800);
+  --semantic-color-text-neutral-subtle-disabled: var(--color-gray-400);
+  --semantic-color-text-neutral-subtlest-default: var(--color-gray-600);
+  --semantic-color-text-neutral-subtlest-disabled: var(--color-gray-300);
+  --semantic-color-text-brand-bold-default: var(--color-indigo-700);
+  --semantic-color-text-brand-bold-hovered: var(--color-indigo-800);
+  --semantic-color-text-brand-bold-pressed: var(--color-indigo-900);
+  --semantic-color-text-brand-bold-disabled: var(--color-indigo-300);
+  --semantic-color-text-brand-subtle-default: var(--color-indigo-600);
+  --semantic-color-text-brand-subtle-hovered: var(--color-indigo-700);
+  --semantic-color-text-accent-bold-default: var(--color-teal-700);
+  --semantic-color-text-accent-bold-hovered: var(--color-teal-800);
+  --semantic-color-text-inverse-bold-default: var(--color-base-white);
+  --semantic-color-text-inverse-bold-hovered: var(--color-gray-100);
+  --semantic-color-text-inverse-bold-disabled: var(--color-gray-500);
+  --semantic-color-text-inverse-subtle-default: var(--color-gray-300);
+  --semantic-color-text-danger-bold-default: var(--color-red-700);
+  --semantic-color-text-danger-bold-hovered: var(--color-red-800);
+  --semantic-color-text-danger-subtle-default: var(--color-red-600);
+  --semantic-color-text-success-bold-default: var(--color-emerald-700);
+  --semantic-color-text-success-bold-hovered: var(--color-emerald-800);
+  --semantic-color-text-success-subtle-default: var(--color-emerald-600);
+  --semantic-color-text-warning-bold-default: var(--color-amber-700);
+  --semantic-color-text-warning-subtle-default: var(--color-amber-600);
+  --semantic-color-border-neutral-default-default: var(--color-gray-300);
+  --semantic-color-border-neutral-default-hovered: var(--color-gray-400);
+  --semantic-color-border-neutral-default-focused: var(--color-indigo-600);
+  --semantic-color-border-neutral-default-disabled: var(--color-gray-200);
+  --semantic-color-border-neutral-bold-default: var(--color-gray-400);
+  --semantic-color-border-neutral-bold-hovered: var(--color-gray-500);
+  --semantic-color-border-neutral-subtle-default: var(--color-gray-200);
+  --semantic-color-border-brand-default-default: var(--color-indigo-500);
+  --semantic-color-border-brand-default-hovered: var(--color-indigo-600);
+  --semantic-color-border-brand-default-pressed: var(--color-indigo-700);
+  --semantic-color-border-brand-default-disabled: var(--color-indigo-200);
+  --semantic-color-border-brand-subtle-default: var(--color-indigo-200);
+  --semantic-color-border-accent-default-default: var(--color-teal-500);
+  --semantic-color-border-inverse-default-default: var(--color-gray-700);
+  --semantic-color-border-danger-default-default: var(--color-red-500);
+  --semantic-color-border-danger-default-hovered: var(--color-red-600);
+  --semantic-color-border-danger-default-focused: var(--color-red-600);
+  --semantic-color-border-success-default-default: var(--color-emerald-500);
+  --semantic-color-border-warning-default-default: var(--color-amber-500);
+  --semantic-color-icon-neutral-bold-default: var(--color-gray-900);
+  --semantic-color-icon-neutral-bold-hovered: var(--color-gray-950);
+  --semantic-color-icon-neutral-bold-disabled: var(--color-gray-300);
+  --semantic-color-icon-neutral-subtle-default: var(--color-gray-500);
+  --semantic-color-icon-neutral-subtle-hovered: var(--color-gray-700);
+  --semantic-color-icon-neutral-subtle-disabled: var(--color-gray-300);
+  --semantic-color-icon-brand-bold-default: var(--color-indigo-600);
+  --semantic-color-icon-brand-bold-hovered: var(--color-indigo-700);
+  --semantic-color-icon-accent-bold-default: var(--color-teal-600);
+  --semantic-color-icon-inverse-bold-default: var(--color-base-white);
+  --semantic-color-icon-danger-bold-default: var(--color-red-500);
+  --semantic-color-icon-success-bold-default: var(--color-emerald-500);
+  --semantic-color-icon-warning-bold-default: var(--color-amber-500);
+
+  /* semantic motion */
+  --semantic-motion-duration-instant: var(--motion-duration-0);
+  --semantic-motion-duration-state: var(--motion-duration-160);
+  --semantic-motion-duration-fade: var(--motion-duration-220);
+  --semantic-motion-duration-layout: var(--motion-duration-320);
+  --semantic-motion-duration-deliberate: var(--motion-duration-400);
+  --semantic-motion-easing-default: var(--motion-easing-standard);
+  --semantic-motion-easing-gentle: var(--motion-easing-gentle);
+
+  /* semantic radius */
+  --semantic-radius-none: var(--dimension-0);
+  --semantic-radius-sm: var(--dimension-1);
+  --semantic-radius-md: var(--dimension-2);
+  --semantic-radius-lg: var(--dimension-3);
+  --semantic-radius-xl: var(--dimension-4);
+  --semantic-radius-2xl: var(--dimension-6);
+  --semantic-radius-full: var(--dimension-999);
+
+  /* semantic spacing */
+  --semantic-spacing-none: var(--dimension-0);
+  --semantic-spacing-xxs: var(--dimension-0-5);
+  --semantic-spacing-xs: var(--dimension-1);
+  --semantic-spacing-sm: var(--dimension-1-5);
+  --semantic-spacing-md: var(--dimension-2);
+  --semantic-spacing-lg: var(--dimension-3);
+  --semantic-spacing-xl: var(--dimension-4);
+  --semantic-spacing-2xl: var(--dimension-5);
+  --semantic-spacing-3xl: var(--dimension-6);
+  --semantic-spacing-4xl: var(--dimension-8);
+  --semantic-spacing-5xl: var(--dimension-10);
+  --semantic-spacing-6xl: var(--dimension-12);
+  --semantic-spacing-7xl: var(--dimension-14);
+  --semantic-spacing-8xl: var(--dimension-16);
+  --semantic-spacing-9xl: var(--dimension-20);
+  --semantic-spacing-10xl: var(--dimension-24);
+
+  /* semantic border-width */
+  --semantic-border-width-none: var(--dimension-0);
+  --semantic-border-width-thin: var(--dimension-0-25);
+  --semantic-border-width-default: var(--dimension-0-5);
+  --semantic-border-width-thick: var(--dimension-1);
+
+  /* semantic size */
+  --semantic-size-xs: var(--dimension-3);
+  --semantic-size-sm: var(--dimension-4);
+  --semantic-size-md: var(--dimension-5);
+  --semantic-size-lg: var(--dimension-6);
+  --semantic-size-xl: var(--dimension-8);
+  --semantic-size-2xl: var(--dimension-10);
+  --semantic-size-3xl: var(--dimension-12);
+  --semantic-size-4xl: var(--dimension-14);
+  --semantic-size-5xl: var(--dimension-16);
+
+  /* elevation */
+  --semantic-shadow-xs: 0px 1px 2px 0px var(--color-shadow-black-6);
+  --semantic-shadow-sm: 0px 1px 1px -1px var(--color-shadow-black-10), 0px 2px 2px -3px var(--color-shadow-black-8), 0px 8px 8px -4px var(--color-shadow-black-6);
+  --semantic-shadow-md: 0px 1px 1px -1px var(--color-shadow-black-8), 0px 2px 2px -2px var(--color-shadow-black-8), 0px 5px 5px -3px var(--color-shadow-black-6), 0px 12px 12px -4px var(--color-shadow-black-4);
+  --semantic-shadow-lg: 0px 1px 1px -1px var(--color-shadow-black-14), 0px 2px 2px -2px var(--color-shadow-black-10), 0px 6px 6px -3px var(--color-shadow-black-8), 0px 20px 20px -4px var(--color-shadow-black-6);
+  --semantic-shadow-xl: 0px 25px 50px -12px var(--color-shadow-black-25);
+}
+
+/* body */
+.text-body-large-regular {
+  font-family: var(--font-family-body), system-ui, sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-20);
+  line-height: var(--font-lineheight-150);
+  letter-spacing: var(--font-letterspacing-normal);
+}
+.text-body-large-medium {
+  font-family: var(--font-family-body), system-ui, sans-serif;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-20);
+  line-height: var(--font-lineheight-150);
+  letter-spacing: var(--font-letterspacing-normal);
+}
+.text-body-large-semibold {
+  font-family: var(--font-family-body), system-ui, sans-serif;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-20);
+  line-height: var(--font-lineheight-150);
+  letter-spacing: var(--font-letterspacing-normal);
+}
+.text-body-large-bold {
+  font-family: var(--font-family-body), system-ui, sans-serif;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-20);
+  line-height: var(--font-lineheight-150);
+  letter-spacing: var(--font-letterspacing-normal);
+}
+.text-body-medium-regular {
+  font-family: var(--font-family-body), system-ui, sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-18);
+  line-height: var(--font-lineheight-150);
+  letter-spacing: var(--font-letterspacing-normal);
+}
+.text-body-medium-medium {
+  font-family: var(--font-family-body), system-ui, sans-serif;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-18);
+  line-height: var(--font-lineheight-150);
+  letter-spacing: var(--font-letterspacing-normal);
+}
+.text-body-medium-semibold {
+  font-family: var(--font-family-body), system-ui, sans-serif;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-18);
+  line-height: var(--font-lineheight-150);
+  letter-spacing: var(--font-letterspacing-normal);
+}
+.text-body-medium-bold {
+  font-family: var(--font-family-body), system-ui, sans-serif;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-18);
+  line-height: var(--font-lineheight-150);
+  letter-spacing: var(--font-letterspacing-normal);
+}
+.text-body-default-regular {
+  font-family: var(--font-family-body), system-ui, sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-16);
+  line-height: var(--font-lineheight-160);
+  letter-spacing: var(--font-letterspacing-normal);
+}
+.text-body-default-medium {
+  font-family: var(--font-family-body), system-ui, sans-serif;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-16);
+  line-height: var(--font-lineheight-160);
+  letter-spacing: var(--font-letterspacing-normal);
+}
+.text-body-default-semibold {
+  font-family: var(--font-family-body), system-ui, sans-serif;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-16);
+  line-height: var(--font-lineheight-160);
+  letter-spacing: var(--font-letterspacing-normal);
+}
+.text-body-default-bold {
+  font-family: var(--font-family-body), system-ui, sans-serif;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-16);
+  line-height: var(--font-lineheight-160);
+  letter-spacing: var(--font-letterspacing-normal);
+}
+.text-body-small-regular {
+  font-family: var(--font-family-body), system-ui, sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-14);
+  line-height: var(--font-lineheight-160);
+  letter-spacing: var(--font-letterspacing-normal);
+}
+.text-body-small-medium {
+  font-family: var(--font-family-body), system-ui, sans-serif;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-14);
+  line-height: var(--font-lineheight-160);
+  letter-spacing: var(--font-letterspacing-normal);
+}
+.text-body-small-semibold {
+  font-family: var(--font-family-body), system-ui, sans-serif;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-14);
+  line-height: var(--font-lineheight-160);
+  letter-spacing: var(--font-letterspacing-normal);
+}
+.text-body-small-bold {
+  font-family: var(--font-family-body), system-ui, sans-serif;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-14);
+  line-height: var(--font-lineheight-160);
+  letter-spacing: var(--font-letterspacing-normal);
+}
+.text-body-tiny-regular {
+  font-family: var(--font-family-body), system-ui, sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-12);
+  line-height: var(--font-lineheight-160);
+  letter-spacing: var(--font-letterspacing-normal);
+}
+.text-body-tiny-medium {
+  font-family: var(--font-family-body), system-ui, sans-serif;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-12);
+  line-height: var(--font-lineheight-160);
+  letter-spacing: var(--font-letterspacing-normal);
+}
+.text-body-tiny-semibold {
+  font-family: var(--font-family-body), system-ui, sans-serif;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-12);
+  line-height: var(--font-lineheight-160);
+  letter-spacing: var(--font-letterspacing-normal);
+}
+.text-body-tiny-bold {
+  font-family: var(--font-family-body), system-ui, sans-serif;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-12);
+  line-height: var(--font-lineheight-160);
+  letter-spacing: var(--font-letterspacing-normal);
+}
+
+/* headings — mobile first */
+.text-jumbo {
+  font-family: var(--font-family-heading), system-ui, sans-serif;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-40);
+  line-height: var(--font-lineheight-120);
+  letter-spacing: var(--font-letterspacing-tighter);
+}
+.text-h1 {
+  font-family: var(--font-family-heading), system-ui, sans-serif;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-32);
+  line-height: var(--font-lineheight-120);
+  letter-spacing: var(--font-letterspacing-tighter);
+}
+.text-h2 {
+  font-family: var(--font-family-heading), system-ui, sans-serif;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-28);
+  line-height: var(--font-lineheight-130);
+  letter-spacing: var(--font-letterspacing-tighter);
+}
+.text-h3 {
+  font-family: var(--font-family-heading), system-ui, sans-serif;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-24);
+  line-height: var(--font-lineheight-130);
+  letter-spacing: var(--font-letterspacing-tight);
+}
+.text-h4 {
+  font-family: var(--font-family-heading), system-ui, sans-serif;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-20);
+  line-height: var(--font-lineheight-140);
+  letter-spacing: var(--font-letterspacing-tight);
+}
+.text-h5 {
+  font-family: var(--font-family-heading), system-ui, sans-serif;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-18);
+  line-height: var(--font-lineheight-140);
+  letter-spacing: var(--font-letterspacing-tight);
+}
+.text-h6 {
+  font-family: var(--font-family-heading), system-ui, sans-serif;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-16);
+  line-height: var(--font-lineheight-140);
+  letter-spacing: var(--font-letterspacing-normal);
+}
+
+@media (min-width: 810px) {
+  .text-jumbo {
+    font-family: var(--font-family-heading), system-ui, sans-serif;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-52);
+    line-height: var(--font-lineheight-110);
+    letter-spacing: var(--font-letterspacing-tighter);
+  }
+  .text-h1 {
+    font-family: var(--font-family-heading), system-ui, sans-serif;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-40);
+    line-height: var(--font-lineheight-120);
+    letter-spacing: var(--font-letterspacing-tighter);
+  }
+  .text-h2 {
+    font-family: var(--font-family-heading), system-ui, sans-serif;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-32);
+    line-height: var(--font-lineheight-130);
+    letter-spacing: var(--font-letterspacing-tighter);
+  }
+  .text-h3 {
+    font-family: var(--font-family-heading), system-ui, sans-serif;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-28);
+    line-height: var(--font-lineheight-130);
+    letter-spacing: var(--font-letterspacing-tight);
+  }
+  .text-h4 {
+    font-family: var(--font-family-heading), system-ui, sans-serif;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-24);
+    line-height: var(--font-lineheight-140);
+    letter-spacing: var(--font-letterspacing-tight);
+  }
+  .text-h5 {
+    font-family: var(--font-family-heading), system-ui, sans-serif;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-20);
+    line-height: var(--font-lineheight-140);
+    letter-spacing: var(--font-letterspacing-tight);
+  }
+  .text-h6 {
+    font-family: var(--font-family-heading), system-ui, sans-serif;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-18);
+    line-height: var(--font-lineheight-140);
+    letter-spacing: var(--font-letterspacing-normal);
+  }
+}
+
+@media (min-width: 1200px) {
+  .text-jumbo {
+    font-family: var(--font-family-heading), system-ui, sans-serif;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-64);
+    line-height: var(--font-lineheight-110);
+    letter-spacing: var(--font-letterspacing-tighter);
+  }
+  .text-h1 {
+    font-family: var(--font-family-heading), system-ui, sans-serif;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-48);
+    line-height: var(--font-lineheight-120);
+    letter-spacing: var(--font-letterspacing-tighter);
+  }
+  .text-h2 {
+    font-family: var(--font-family-heading), system-ui, sans-serif;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-40);
+    line-height: var(--font-lineheight-120);
+    letter-spacing: var(--font-letterspacing-tighter);
+  }
+  .text-h3 {
+    font-family: var(--font-family-heading), system-ui, sans-serif;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-32);
+    line-height: var(--font-lineheight-130);
+    letter-spacing: var(--font-letterspacing-tight);
+  }
+  .text-h4 {
+    font-family: var(--font-family-heading), system-ui, sans-serif;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-24);
+    line-height: var(--font-lineheight-140);
+    letter-spacing: var(--font-letterspacing-tight);
+  }
+  .text-h5 {
+    font-family: var(--font-family-heading), system-ui, sans-serif;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-20);
+    line-height: var(--font-lineheight-140);
+    letter-spacing: var(--font-letterspacing-tight);
+  }
+  .text-h6 {
+    font-family: var(--font-family-heading), system-ui, sans-serif;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-18);
+    line-height: var(--font-lineheight-140);
+    letter-spacing: var(--font-letterspacing-normal);
+  }
+}
+
+/* SHORT ALIASES — the names your SKILL.md and components actually use.
+   Generated, never hand-edited: every one points at its qualified token.
+   Without this block, every short name silently resolves to nothing. */
+:root {
+  --bg-accent-bold-default: var(--semantic-color-background-accent-bold-default);
+  --bg-accent-bold-hovered: var(--semantic-color-background-accent-bold-hovered);
+  --bg-accent-bold-pressed: var(--semantic-color-background-accent-bold-pressed);
+  --bg-accent-bold: var(--bg-accent-bold-default);
+  --bg-accent-subtle-default: var(--semantic-color-background-accent-subtle-default);
+  --bg-accent-subtle: var(--bg-accent-subtle-default);
+  --bg-accent-subtlest-default: var(--semantic-color-background-accent-subtlest-default);
+  --bg-accent-subtlest: var(--bg-accent-subtlest-default);
+  --bg-brand-bold-default: var(--semantic-color-background-brand-bold-default);
+  --bg-brand-bold-disabled: var(--semantic-color-background-brand-bold-disabled);
+  --bg-brand-bold-hovered: var(--semantic-color-background-brand-bold-hovered);
+  --bg-brand-bold-pressed: var(--semantic-color-background-brand-bold-pressed);
+  --bg-brand-bold: var(--bg-brand-bold-default);
+  --bg-brand-subtle-default: var(--semantic-color-background-brand-subtle-default);
+  --bg-brand-subtle-disabled: var(--semantic-color-background-brand-subtle-disabled);
+  --bg-brand-subtle-hovered: var(--semantic-color-background-brand-subtle-hovered);
+  --bg-brand-subtle-pressed: var(--semantic-color-background-brand-subtle-pressed);
+  --bg-brand-subtle: var(--bg-brand-subtle-default);
+  --bg-brand-subtlest-default: var(--semantic-color-background-brand-subtlest-default);
+  --bg-brand-subtlest-hovered: var(--semantic-color-background-brand-subtlest-hovered);
+  --bg-brand-subtlest: var(--bg-brand-subtlest-default);
+  --bg-danger-bold-default: var(--semantic-color-background-danger-bold-default);
+  --bg-danger-bold-disabled: var(--semantic-color-background-danger-bold-disabled);
+  --bg-danger-bold-hovered: var(--semantic-color-background-danger-bold-hovered);
+  --bg-danger-bold-pressed: var(--semantic-color-background-danger-bold-pressed);
+  --bg-danger-bold: var(--bg-danger-bold-default);
+  --bg-danger-subtle-default: var(--semantic-color-background-danger-subtle-default);
+  --bg-danger-subtle-hovered: var(--semantic-color-background-danger-subtle-hovered);
+  --bg-danger-subtle: var(--bg-danger-subtle-default);
+  --bg-danger-subtlest-default: var(--semantic-color-background-danger-subtlest-default);
+  --bg-danger-subtlest: var(--bg-danger-subtlest-default);
+  --bg-inverse-bold-default: var(--semantic-color-background-inverse-bold-default);
+  --bg-inverse-bold-hovered: var(--semantic-color-background-inverse-bold-hovered);
+  --bg-inverse-bold-pressed: var(--semantic-color-background-inverse-bold-pressed);
+  --bg-inverse-bold: var(--bg-inverse-bold-default);
+  --bg-inverse-subtle-default: var(--semantic-color-background-inverse-subtle-default);
+  --bg-inverse-subtle: var(--bg-inverse-subtle-default);
+  --bg-neutral-bold-default: var(--semantic-color-background-neutral-bold-default);
+  --bg-neutral-bold-hovered: var(--semantic-color-background-neutral-bold-hovered);
+  --bg-neutral-bold: var(--bg-neutral-bold-default);
+  --bg-neutral-subtle-default: var(--semantic-color-background-neutral-subtle-default);
+  --bg-neutral-subtle-disabled: var(--semantic-color-background-neutral-subtle-disabled);
+  --bg-neutral-subtle-hovered: var(--semantic-color-background-neutral-subtle-hovered);
+  --bg-neutral-subtle-pressed: var(--semantic-color-background-neutral-subtle-pressed);
+  --bg-neutral-subtle: var(--bg-neutral-subtle-default);
+  --bg-neutral-subtlest-default: var(--semantic-color-background-neutral-subtlest-default);
+  --bg-neutral-subtlest-disabled: var(--semantic-color-background-neutral-subtlest-disabled);
+  --bg-neutral-subtlest-focused: var(--semantic-color-background-neutral-subtlest-focused);
+  --bg-neutral-subtlest-hovered: var(--semantic-color-background-neutral-subtlest-hovered);
+  --bg-neutral-subtlest-pressed: var(--semantic-color-background-neutral-subtlest-pressed);
+  --bg-neutral-subtlest: var(--bg-neutral-subtlest-default);
+  --bg-success-bold-default: var(--semantic-color-background-success-bold-default);
+  --bg-success-bold-disabled: var(--semantic-color-background-success-bold-disabled);
+  --bg-success-bold-hovered: var(--semantic-color-background-success-bold-hovered);
+  --bg-success-bold-pressed: var(--semantic-color-background-success-bold-pressed);
+  --bg-success-bold: var(--bg-success-bold-default);
+  --bg-success-subtle-default: var(--semantic-color-background-success-subtle-default);
+  --bg-success-subtle-hovered: var(--semantic-color-background-success-subtle-hovered);
+  --bg-success-subtle: var(--bg-success-subtle-default);
+  --bg-success-subtlest-default: var(--semantic-color-background-success-subtlest-default);
+  --bg-success-subtlest: var(--bg-success-subtlest-default);
+  --bg-surface-default-default: var(--semantic-color-background-surface-default-default);
+  --bg-surface-default: var(--bg-surface-default-default);
+  --bg-surface-raised-default: var(--semantic-color-background-surface-raised-default);
+  --bg-surface-raised: var(--bg-surface-raised-default);
+  --bg-surface-sunken-default: var(--semantic-color-background-surface-sunken-default);
+  --bg-surface-sunken: var(--bg-surface-sunken-default);
+  --bg-warning-bold-default: var(--semantic-color-background-warning-bold-default);
+  --bg-warning-bold-hovered: var(--semantic-color-background-warning-bold-hovered);
+  --bg-warning-bold: var(--bg-warning-bold-default);
+  --bg-warning-subtle-default: var(--semantic-color-background-warning-subtle-default);
+  --bg-warning-subtle: var(--bg-warning-subtle-default);
+  --bg-warning-subtlest-default: var(--semantic-color-background-warning-subtlest-default);
+  --bg-warning-subtlest: var(--bg-warning-subtlest-default);
+  --border-accent-default-default: var(--semantic-color-border-accent-default-default);
+  --border-accent-default: var(--border-accent-default-default);
+  --border-brand-default-default: var(--semantic-color-border-brand-default-default);
+  --border-brand-default-disabled: var(--semantic-color-border-brand-default-disabled);
+  --border-brand-default-hovered: var(--semantic-color-border-brand-default-hovered);
+  --border-brand-default-pressed: var(--semantic-color-border-brand-default-pressed);
+  --border-brand-default: var(--border-brand-default-default);
+  --border-brand-subtle-default: var(--semantic-color-border-brand-subtle-default);
+  --border-brand-subtle: var(--border-brand-subtle-default);
+  --border-danger-default-default: var(--semantic-color-border-danger-default-default);
+  --border-danger-default-focused: var(--semantic-color-border-danger-default-focused);
+  --border-danger-default-hovered: var(--semantic-color-border-danger-default-hovered);
+  --border-danger-default: var(--border-danger-default-default);
+  --border-inverse-default-default: var(--semantic-color-border-inverse-default-default);
+  --border-inverse-default: var(--border-inverse-default-default);
+  --border-neutral-bold-default: var(--semantic-color-border-neutral-bold-default);
+  --border-neutral-bold-hovered: var(--semantic-color-border-neutral-bold-hovered);
+  --border-neutral-bold: var(--border-neutral-bold-default);
+  --border-neutral-default-default: var(--semantic-color-border-neutral-default-default);
+  --border-neutral-default-disabled: var(--semantic-color-border-neutral-default-disabled);
+  --border-neutral-default-focused: var(--semantic-color-border-neutral-default-focused);
+  --border-neutral-default-hovered: var(--semantic-color-border-neutral-default-hovered);
+  --border-neutral-default: var(--border-neutral-default-default);
+  --border-neutral-disabled: var(--semantic-color-border-neutral-default-disabled);
+  --border-neutral-focused: var(--semantic-color-border-neutral-default-focused);
+  --border-neutral-hovered: var(--semantic-color-border-neutral-default-hovered);
+  --border-neutral-subtle-default: var(--semantic-color-border-neutral-subtle-default);
+  --border-neutral-subtle: var(--border-neutral-subtle-default);
+  --border-success-default-default: var(--semantic-color-border-success-default-default);
+  --border-success-default: var(--border-success-default-default);
+  --border-warning-default-default: var(--semantic-color-border-warning-default-default);
+  --border-warning-default: var(--border-warning-default-default);
+  --border-width-default: var(--semantic-border-width-default);
+  --border-width-none: var(--semantic-border-width-none);
+  --border-width-thick: var(--semantic-border-width-thick);
+  --border-width-thin: var(--semantic-border-width-thin);
+  --duration-deliberate: var(--semantic-motion-duration-deliberate);
+  --duration-fade: var(--semantic-motion-duration-fade);
+  --duration-instant: var(--semantic-motion-duration-instant);
+  --duration-layout: var(--semantic-motion-duration-layout);
+  --duration-state: var(--semantic-motion-duration-state);
+  --easing-default: var(--semantic-motion-easing-default);
+  --easing-gentle: var(--semantic-motion-easing-gentle);
+  --font-body: var(--font-family-body);
+  --font-heading: var(--font-family-heading);
+  --font-mono: var(--font-family-mono);
+  --icon-accent-bold-default: var(--semantic-color-icon-accent-bold-default);
+  --icon-accent-bold: var(--icon-accent-bold-default);
+  --icon-brand-bold-default: var(--semantic-color-icon-brand-bold-default);
+  --icon-brand-bold-hovered: var(--semantic-color-icon-brand-bold-hovered);
+  --icon-brand-bold: var(--icon-brand-bold-default);
+  --icon-danger-bold-default: var(--semantic-color-icon-danger-bold-default);
+  --icon-danger-bold: var(--icon-danger-bold-default);
+  --icon-inverse-bold-default: var(--semantic-color-icon-inverse-bold-default);
+  --icon-inverse-bold: var(--icon-inverse-bold-default);
+  --icon-neutral-bold-default: var(--semantic-color-icon-neutral-bold-default);
+  --icon-neutral-bold-disabled: var(--semantic-color-icon-neutral-bold-disabled);
+  --icon-neutral-bold-hovered: var(--semantic-color-icon-neutral-bold-hovered);
+  --icon-neutral-bold: var(--icon-neutral-bold-default);
+  --icon-neutral-subtle-default: var(--semantic-color-icon-neutral-subtle-default);
+  --icon-neutral-subtle-disabled: var(--semantic-color-icon-neutral-subtle-disabled);
+  --icon-neutral-subtle-hovered: var(--semantic-color-icon-neutral-subtle-hovered);
+  --icon-neutral-subtle: var(--icon-neutral-subtle-default);
+  --icon-success-bold-default: var(--semantic-color-icon-success-bold-default);
+  --icon-success-bold: var(--icon-success-bold-default);
+  --icon-warning-bold-default: var(--semantic-color-icon-warning-bold-default);
+  --icon-warning-bold: var(--icon-warning-bold-default);
+  --radius-2xl: var(--semantic-radius-2xl);
+  --radius-full: var(--semantic-radius-full);
+  --radius-lg: var(--semantic-radius-lg);
+  --radius-md: var(--semantic-radius-md);
+  --radius-none: var(--semantic-radius-none);
+  --radius-sm: var(--semantic-radius-sm);
+  --radius-xl: var(--semantic-radius-xl);
+  --shadow-lg: var(--semantic-shadow-lg);
+  --shadow-md: var(--semantic-shadow-md);
+  --shadow-sm: var(--semantic-shadow-sm);
+  --shadow-xl: var(--semantic-shadow-xl);
+  --shadow-xs: var(--semantic-shadow-xs);
+  --size-2xl: var(--semantic-size-2xl);
+  --size-3xl: var(--semantic-size-3xl);
+  --size-4xl: var(--semantic-size-4xl);
+  --size-5xl: var(--semantic-size-5xl);
+  --size-lg: var(--semantic-size-lg);
+  --size-md: var(--semantic-size-md);
+  --size-sm: var(--semantic-size-sm);
+  --size-xl: var(--semantic-size-xl);
+  --size-xs: var(--semantic-size-xs);
+  --spacing-10xl: var(--semantic-spacing-10xl);
+  --spacing-2xl: var(--semantic-spacing-2xl);
+  --spacing-3xl: var(--semantic-spacing-3xl);
+  --spacing-4xl: var(--semantic-spacing-4xl);
+  --spacing-5xl: var(--semantic-spacing-5xl);
+  --spacing-6xl: var(--semantic-spacing-6xl);
+  --spacing-7xl: var(--semantic-spacing-7xl);
+  --spacing-8xl: var(--semantic-spacing-8xl);
+  --spacing-9xl: var(--semantic-spacing-9xl);
+  --spacing-lg: var(--semantic-spacing-lg);
+  --spacing-md: var(--semantic-spacing-md);
+  --spacing-none: var(--semantic-spacing-none);
+  --spacing-sm: var(--semantic-spacing-sm);
+  --spacing-xl: var(--semantic-spacing-xl);
+  --spacing-xs: var(--semantic-spacing-xs);
+  --spacing-xxs: var(--semantic-spacing-xxs);
+  --text-accent-bold-default: var(--semantic-color-text-accent-bold-default);
+  --text-accent-bold-hovered: var(--semantic-color-text-accent-bold-hovered);
+  --text-accent-bold: var(--text-accent-bold-default);
+  --text-brand-bold-default: var(--semantic-color-text-brand-bold-default);
+  --text-brand-bold-disabled: var(--semantic-color-text-brand-bold-disabled);
+  --text-brand-bold-hovered: var(--semantic-color-text-brand-bold-hovered);
+  --text-brand-bold-pressed: var(--semantic-color-text-brand-bold-pressed);
+  --text-brand-bold: var(--text-brand-bold-default);
+  --text-brand-subtle-default: var(--semantic-color-text-brand-subtle-default);
+  --text-brand-subtle-hovered: var(--semantic-color-text-brand-subtle-hovered);
+  --text-brand-subtle: var(--text-brand-subtle-default);
+  --text-danger-bold-default: var(--semantic-color-text-danger-bold-default);
+  --text-danger-bold-hovered: var(--semantic-color-text-danger-bold-hovered);
+  --text-danger-bold: var(--text-danger-bold-default);
+  --text-danger-subtle-default: var(--semantic-color-text-danger-subtle-default);
+  --text-danger-subtle: var(--text-danger-subtle-default);
+  --text-inverse-bold-default: var(--semantic-color-text-inverse-bold-default);
+  --text-inverse-bold-disabled: var(--semantic-color-text-inverse-bold-disabled);
+  --text-inverse-bold-hovered: var(--semantic-color-text-inverse-bold-hovered);
+  --text-inverse-bold: var(--text-inverse-bold-default);
+  --text-inverse-subtle-default: var(--semantic-color-text-inverse-subtle-default);
+  --text-inverse-subtle: var(--text-inverse-subtle-default);
+  --text-neutral-bold-default: var(--semantic-color-text-neutral-bold-default);
+  --text-neutral-bold-disabled: var(--semantic-color-text-neutral-bold-disabled);
+  --text-neutral-bold-hovered: var(--semantic-color-text-neutral-bold-hovered);
+  --text-neutral-bold: var(--text-neutral-bold-default);
+  --text-neutral-disabled: var(--semantic-color-text-neutral-bold-disabled);
+  --text-neutral-subtle-default: var(--semantic-color-text-neutral-subtle-default);
+  --text-neutral-subtle-disabled: var(--semantic-color-text-neutral-subtle-disabled);
+  --text-neutral-subtle-hovered: var(--semantic-color-text-neutral-subtle-hovered);
+  --text-neutral-subtle: var(--text-neutral-subtle-default);
+  --text-neutral-subtlest-default: var(--semantic-color-text-neutral-subtlest-default);
+  --text-neutral-subtlest-disabled: var(--semantic-color-text-neutral-subtlest-disabled);
+  --text-neutral-subtlest: var(--text-neutral-subtlest-default);
+  --text-success-bold-default: var(--semantic-color-text-success-bold-default);
+  --text-success-bold-hovered: var(--semantic-color-text-success-bold-hovered);
+  --text-success-bold: var(--text-success-bold-default);
+  --text-success-subtle-default: var(--semantic-color-text-success-subtle-default);
+  --text-success-subtle: var(--text-success-subtle-default);
+  --text-warning-bold-default: var(--semantic-color-text-warning-bold-default);
+  --text-warning-bold: var(--text-warning-bold-default);
+  --text-warning-subtle-default: var(--semantic-color-text-warning-subtle-default);
+  --text-warning-subtle: var(--text-warning-subtle-default);
+}

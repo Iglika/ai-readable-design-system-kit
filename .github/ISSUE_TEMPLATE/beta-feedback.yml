@@ -1,0 +1,57 @@
+name: Beta feedback
+description: Tell me what you tried, where the workflow became unclear and what you needed next.
+title: "[Beta feedback] "
+body:
+  - type: dropdown
+    id: route
+    attributes:
+      label: Which route did you use?
+      options:
+        - Imported and customised the finished Figma system
+        - Built the system from scratch with the prompts
+        - Explored the repository without completing either route
+    validations:
+      required: true
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: What were you trying to build?
+      placeholder: A short description of the product, screen or workflow.
+    validations:
+      required: true
+
+  - type: input
+    id: step
+    attributes:
+      label: Where did you hesitate or stop?
+      placeholder: For example, Quick Start step 6 or prompt 07.
+
+  - type: textarea
+    id: missing
+    attributes:
+      label: What was missing?
+      description: Name the component, pattern, code output or explanation that would have helped most.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: value
+    attributes:
+      label: Which part created the most value?
+      options:
+        - The finished Figma file
+        - The step-by-step prompts
+        - The guide and documented traps
+        - The token and CSS build
+        - The AI handoff files
+        - I did not reach a useful result
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      placeholder: Confusing wording, errors, unexpected results or ideas.
+

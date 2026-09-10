@@ -1,0 +1,17 @@
+{
+  "name": "ai-readable-design-system",
+  "version": "1.2.0",
+  "description": "A runnable starter kit for an AI-readable design system across Figma, design tokens, CSS and AI handoff files.",
+  "private": true,
+  "scripts": {
+    "setup": "npm ci --prefix tokens",
+    "build": "npm run build --prefix tokens",
+    "verify": "npm run verify --prefix tokens",
+    "check": "npm run check --prefix tokens --",
+    "test": "npm run build && npm run verify && npm run check -- handoff/SKILL.md handoff/CLAUDE.md"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
+

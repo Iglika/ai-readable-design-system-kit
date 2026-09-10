@@ -1,0 +1,18 @@
+{
+  "name": "ai-readable-design-system-tokens",
+  "version": "1.2.0",
+  "description": "Token pipeline for an AI-readable design system. src/values.mjs is the source of truth; Figma and CSS are both generated from it.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "tokens": "node scripts/build-tokens.mjs",
+    "css": "node scripts/build-css.mjs",
+    "build": "npm run tokens && npm run css && npm run skill",
+    "verify": "node scripts/verify.mjs ../handoff/SKILL.md ../handoff/CLAUDE.md",
+    "check": "node scripts/verify.mjs --strict",
+    "skill": "node scripts/build-skill.mjs"
+  },
+  "devDependencies": {
+    "style-dictionary": "^5.0.0"
+  }
+}
