@@ -10,6 +10,7 @@
     "build": "npm run tokens && npm run css && npm run skill",
     "verify": "node scripts/verify.mjs ../handoff/SKILL.md ../handoff/CLAUDE.md",
     "verify:skills": "node scripts/verify-skill-copies.mjs",
+    "verify:hues": "node scripts/verify-hue-roles.mjs",
     "check": "node scripts/verify.mjs --strict",
     "skill": "node scripts/build-skill.mjs"
   },
