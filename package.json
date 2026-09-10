@@ -7,8 +7,9 @@
     "setup": "npm ci --prefix tokens",
     "build": "npm run build --prefix tokens",
     "verify": "npm run verify --prefix tokens",
+    "verify:skills": "npm run verify:skills --prefix tokens",
     "check": "npm run check --prefix tokens --",
-    "test": "npm run build && npm run verify && npm run check -- handoff/SKILL.md handoff/CLAUDE.md"
+    "test": "npm run build && npm run verify && npm run verify:skills && npm run check -- handoff/SKILL.md handoff/CLAUDE.md"
   },
   "engines": {
     "node": ">=22.0.0"
