@@ -126,7 +126,7 @@ renderings of it, so write the values once and apply them to both.
 6. Summarise the chosen colours and fonts, changed files, verification result and any
    remaining Figma step.
 
-Never edit `tokens/dist/`, `tokens/dist/` or `handoff/SKILL.md`
+Never edit `tokens/dist/tokens.json`, `tokens/dist/tokens.css` or `handoff/SKILL.md`
 by hand — all three are generated from `values.mjs` by `npm run build`. Do not rename token
 paths simply because a new colour has a different marketing name; changing token names can
 break aliases and bindings.
