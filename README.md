@@ -22,11 +22,13 @@ duplicate, no access to request.
 Everything else in this repository is for what comes next: rebranding it, carrying it into
 code, or rebuilding it from scratch so you own every decision.
 
-### Easiest test: use the built-in Codex skill
+### Easiest test: use the built-in skill
 
 1. Install Node.js 22 or newer.
-2. Download or clone this repository and open the **repository folder** in Codex.
-3. Ask Codex to run `$setup-ai-readable-design-system`.
+2. Download or clone this repository and open the **repository folder** in Claude Code or Codex.
+3. Ask it to set up the AI-Readable Design System.
+   Or invoke the skill directly — `/setup-ai-readable-design-system` in Claude Code,
+   `$setup-ai-readable-design-system` in Codex.
 4. Choose **Test the supplied starter** when asked.
 
 The skill installs the local dependency, builds the supplied tokens and checks the result.
@@ -89,7 +91,7 @@ Both routes use the same naming contract, component contract and verification pr
 | **`prompts/`** | Route 2: build the system yourself. Start at `prompts/README.md` |
 | **`contracts/`** | `naming.md` and `components.md` — the decisions the prompts apply |
 | `traps.md` | The fourteen documented failure modes, all of which report success |
-| `.agents/skills/…` | Interactive setup and test guide for Codex |
+| `.agents/skills/…`<br>`.claude/skills/…` | Interactive setup and test guide. Same skill in both locations — Codex reads `.agents/`, Claude Code reads `.claude/` |
 
 Each directory is one job:
 
