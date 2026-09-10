@@ -25,7 +25,11 @@ code, or rebuilding it from scratch so you own every decision.
 ### Easiest test: use the built-in skill
 
 1. Install Node.js 22 or newer.
-2. Download or clone this repository and open the **repository folder** in Claude Code or Codex.
+2. Download or clone this repository, then open **the folder you just unpacked or cloned**
+   in Claude Code or Codex — the one containing `README.md` and `package.json`, not a folder
+   containing it. Cloning gives you `ai-readable-design-system-kit`; the ZIP download gives
+   you `ai-readable-design-system-kit-main`. Either is correct; a folder holding one is not,
+   because the setup skill lives inside it and your AI tool only looks at the folder you open.
 3. Ask it to set up the AI-Readable Design System.
    Or invoke the skill directly — `/setup-ai-readable-design-system` in Claude Code,
    `$setup-ai-readable-design-system` in Codex.
@@ -187,3 +191,10 @@ Figma file, the method, the prompts and the token pipeline are all in this repos
 Feedback is part of the product-discovery process:
 please use the repository's **Beta feedback** issue template to record what you tried to
 build, where you became stuck and what you needed next.
+
+## Author
+
+The AI-Readable Design System Starter Kit was built by **Iglika Mateeva-Drincheva**, a Senior
+Product Designer and AI Builder.
+
+[Website](https://iglika.co) · [LinkedIn](https://www.linkedin.com/in/iglikamd/) · [Let's work together](https://cal.com/iglikaco/discovery-call)
