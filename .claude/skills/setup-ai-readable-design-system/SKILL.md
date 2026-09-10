@@ -72,7 +72,15 @@ Then ask for:
 
 If the user supplies only one hex colour, propose an eleven-step 50-950 ramp and show it
 before changing files. Do not claim the ramp is accessible until contrast has been checked.
-Preserve the neutral and status ramps unless the user explicitly asks to replace them.
+
+**Never touch the status ramps.** `red`, `emerald` and `amber` carry danger, success and
+warning. Replace one only if the user names that ramp explicitly and unprompted — "make my
+brand red" is a brand instruction, not permission to move `red`. The same goes for `gray`.
+
+**Check the proposed hue against the status hues before applying it.** If the brand lands in
+the same hue family as `danger`, the primary and destructive actions become hard to tell
+apart. Say so before you write anything, and let the user decide with that in front of them.
+`npm run verify:hues` is the mechanical version of this check.
 
 This route keeps the imported file exactly as it is, with approved primitive values changed. Preserve
 the existing pages, components, variants, names, semantic aliases, bindings and layout.
@@ -114,8 +122,11 @@ renderings of it, so write the values once and apply them to both.
    `figma/starter-template.fig`, or an authorised new file in their workspace.
 2. Write the approved colour and font values into `tokens/src/values.mjs`. This is
    the only file that gets edited by hand.
-3. Run `npm run build` and `npm run verify`. Verification must end with
-   `every chain terminates in a real value` before going near Figma.
+3. Run `npm run build`, `npm run verify` and `npm run verify:hues`. Verification must end
+   with `every chain terminates in a real value`, and the hue check must pass, before going
+   near Figma. `verify` proves the values resolve; `verify:hues` proves the roles are still
+   tellable apart. A brand hue sitting on top of `danger` resolves perfectly and still ships
+   a "Save" button that looks like "Delete permanently".
 4. If a Figma tool with write access is available, apply the same values to the user's
    file. **Change primitives only** — roughly 22 values, the two colour ramps and the
    font families. All 311 semantics and 134 variants are aliases and follow on their own.
@@ -127,9 +138,35 @@ renderings of it, so write the values once and apply them to both.
    remaining Figma step.
 
 Never edit `tokens/dist/tokens.json`, `tokens/dist/tokens.css` or `handoff/SKILL.md`
-by hand — all three are generated from `values.mjs` by `npm run build`. Do not rename token
-paths simply because a new colour has a different marketing name; changing token names can
-break aliases and bindings.
+by hand — all three are generated from `values.mjs` by `npm run build`.
+
+## Rebrand by repointing, never by overwriting
+
+A ramp is named for what it *is*, so a ramp holding `#FF7477` is `coral`, not `indigo`. But
+do **not** get there by writing coral values into the `indigo` ramp, and do **not** get
+there by renaming `indigo`. Overwriting leaves a name that lies about its value; renaming a
+variable in Figma silently unbinds every layer using it, and the layer just quietly holds a
+raw value again — no error, no warning. See `contracts/naming.md` §9.
+
+Add, repoint, then remove:
+
+1. Add the new ramp to `COLOR` in `values.mjs`, alongside the existing one.
+2. Repoint every `SEM_COLOR` alias pointing at `indigo.*` to `coral.*`. This is the rebrand
+   — the semantic layer is where purpose lives, so purpose is what moves.
+3. Confirm nothing references `indigo` any more.
+4. Remove the now-unbound `indigo` ramp. Unbound is the safe window; see guardrail 2.
+
+Apply the same order in Figma: create the new variables, repoint the semantic aliases, then
+delete the orphaned ones. Never rename a variable in place.
+
+Derive the name from the colour, not from the user's marketing language. `#FF7477` is a
+coral whatever the brand deck calls it. If the honest name is already taken by a status ramp
+— a red brand beside the `red` status ramp — pick the nearest honest alternative (`coral`,
+`rose`, `crimson`) rather than reusing the name.
+
+**Semantic paths never change at all.** `background/brand/bold/default` is named for what it
+is *for*, and that does not change when the brand colour does. Only the alias behind it
+moves.
 
 ## Finish with one next step
 
